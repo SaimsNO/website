@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/font-style.css">
+    <link rel="stylesheet" href="styles/owl.theme.default.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Anhzee</title>
 </head>
 <body>
@@ -38,29 +44,49 @@
     <main class="main__content">
         <h1>The company Anhzee</h1>
         <section class="carousel_wrapper">
-            <h2>carousel</h2>
-            <div class="slide">
-                <img src="" alt="Слайд 1">
-                <h3>Professional Stage Lighting Equipment</h3>
-                <p>for 
-                    theatres 
-                    concert halls, cultural venues</p>
-            </div>
-            <div class="slide">
-                <img src="" alt="Слайд 2">
-            </div>
-            <div class="slide">
-                <img src="" alt="Слайд 3">
-            </div>
-            <div class="slide">
-                <img src="" alt="Слайд 4">
-            </div>
-            <div class="carousel-dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
+            <h2 style="display: none;">carousel</h2>
+            <div class="owl-carousel">
+                <div class="item slide_content">
+                    <div class="slide__description">
+                        <h3>Professional Stage Lighting Equipment</h3>
+                        <p>for<br> 
+                            theatres<br>
+                            concert halls,<br> cultural venues
+                        </p>
+                    </div> 
+                    <img src="img/slide1.jpg" alt="">
+                </div>
+                <div class="item slide_content">
+                    <div class="slide__description">
+                        <h3>Professional Stage Lighting Equipment</h3>
+                        <p>for<br> 
+                            theatres<br>
+                            concert halls,<br> cultural venues
+                        </p>
+                    </div> 
+                    <img src="img/slide1.jpg" alt="">
+                </div>
+                <div class="item slide_content">
+                    <div class="slide__description">
+                        <h3>Professional Stage Lighting Equipment</h3>
+                        <p>for<br> 
+                            theatres<br>
+                            concert halls,<br> cultural venues
+                        </p>
+                    </div> 
+                    <img src="img/slide1.jpg" alt="">
+                </div>
+                <div class="item slide_content">
+                    <div class="slide__description">
+                        <h3>Professional Stage Lighting Equipment</h3>
+                        <p>for<br> 
+                            theatres<br>
+                            concert halls,<br> cultural venues
+                        </p>
+                    </div> 
+                    <img src="img/slide1.jpg" alt="">
+                </div>
+              </div>
         </section>
         <section class="catalogue">
             <h2>product catalog</h2>
@@ -81,78 +107,64 @@
             </div>
             <div class="line"></div>
             <div class="exclusive_product">
-                <div class="line"></div>
-                <h3 class ="font__exclusive__good">EXCLUSIVE ANZHEE PRO PHOENIX SERIES</h3>
-                <p>Anzhee PRO PHOENIX series presents high-quality theatrical 
+                <h3 class ="font_headings">EXCLUSIVE ANZHEE PRO PHOENIX SERIES</h3>
+                <p class ="describtion__exclusive__good">Anzhee PRO PHOENIX series presents high-quality theatrical 
                     moving heads combining excellent optics, powerful LED source, 
                     a variety of options and a low-noise cooling system. Choose 
                     your PHOENIX to rise!</p>
-                <img src="" alt="">
+                <img src="img/exclisive.png" alt="">
             </div>
             <div class="pair__goods">
-                <div class="good">
-                    <a href="">
-                        <img src="" alt="">
-                        <h3 class="product_font">LIGHTING CONTROL</h3>
-                    </a>
-                </div>
-                <div class="good">
-                    <a href="">
-                        <img src="" alt="">
-                        <h3 class="product_font">THEATRICAL LIGHTING</h3>
-                    </a>
-                </div>
+                <a href="" class="good">
+                    <div class="img__wrapper">
+                        <img src="img/good1.png" alt="" class="good__img">
+                    </div>
+                    <h3 class="product_font">LIGHTING CONTROL</h3>
+                </a>
+                <a href="" class="good">
+                    <div class="img__wrapper">
+                        <img src="img/good2.png" alt="" class="good__img">
+                    </div>
+                    <h3 class="product_font">THEATRICAL LIGHTING</h3>
+                </a>
             </div>
             <div class="pair__goods">
+                <a href="" class="good">
+                    <div class="img__wrapper">
+                        <img src="img/good1.png" alt="" class="good__img">
+                    </div>
+                    <h3 class="product_font">FOLLOW SPOT LIGHTS</h3>
+                </a>
                 <div class="good">
                     <a href="">
-                        <img src="" alt="">
-                        <h3 class="product_font">FOLLOW SPOT LIGHTS</h3>
-                    </a>
-                </div>
-                <div class="view_all">
-                    <a href="">
-                        <h3>view catalogue</h3>
-                        <img src="" alt="union">
+                        <h3 class="font__view">view catalogue</h3>
+                        <img src="img/Union.svg" alt="union">
+                        <div class="line"></div>
                     </a>
                 </div>
             </div>
         </section>
         <section class="company">
-            <h2>THE COMPANY</h2>
+            <h2 class="font_company">THE COMPANY</h2>
             <div class="carousel_wrapper">
-                <div class="slide active">
-                    <video src=""></video>
+                <div class="owl-carousel">
+                    <div class="item-video" data-merge="1">
+                        <a class="owl-video" href="https://www.youtube.com/watch?v=JpxsRwnRwCQ"></a>
+                    </div>
                 </div>
-                <div class="slide">
-                    <video src=""></video>
-                </div>
-                <div class="slide">
-                    <video src=""></video>
-                </div>
-                <div class="slide">
-                    <video src=""></video>
-                </div>
-                <div class="carousel-dots">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
-                <div class="carousel_wrapper"></div>
             </div>
             <div class="about_us">
-                <h3>ABOUT US</h3>
+                <h3 class ="font_headings">ABOUT US</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, corporis facilis architecto inventore suscipit ullam tenetur doloremque iusto, porro nam odit provident eveniet nihil voluptate quidem explicabo amet. Atque neque repellat quam optio veniam praesentium, temporibus quis maxime ipsa magnam?</p>
                 <p>Placeat ab aut consequuntur sunt eveniet, nemo beatae fuga amet accusamus error hic ipsum explicabo maxime sit. Ut tenetur corrupti temporibus commodi nobis dolorum praesentium hic aspernatur, aliquid ab ea? Velit magni tempore nesciunt ipsam? Aliquam quia laudantium commodi harum!</p>
                 <p>Porro quam nam aspernatur voluptatibus illum amet voluptatem tempore quasi recusandae, ipsa, obcaecati veritatis nobis! Fuga doloremque nesciunt fugit! Rerum animi esse quo possimus ea, molestiae, quos quisquam aperiam delectus ipsum, ducimus nulla expedita doloribus facilis adipisci dolor quas in!</p>
 
-                <a href="">
+                <a class ="wrapper__learn__more" href="">
                     <p>
                         LEARN <br>
                         MORE
                     </p>
-                    <img src="" alt="union">
+                    <img src="img/Union.svg" alt="union">
                 </a>
                 <div class="line"></div>
 
@@ -201,4 +213,7 @@
         <p>&copy; 2023 Anzhee All rights reserved</p>
     </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
 </html>
