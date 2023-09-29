@@ -17,6 +17,9 @@ body{
     background-color: var(--main-color);
     padding: 10px;
 }
+h1, h2, h3, h4, h5, h6, p{
+    margin: 10px 0;
+}
 img {
     max-width: 100%;
   }
@@ -43,6 +46,9 @@ input:focus {
 .main__content h1{
     width: 100%;
     display: none;
+}
+.carousel_wrapper{
+    margin: 20px 0;
 }
 .slide_content{
     position: relative;
@@ -91,12 +97,13 @@ input:focus {
 
 .exclusive_product{
     width: 100%;
-    margin-bottom: 30px;
+    margin: 20px 0;
 }
 .pair__goods{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 20px;
 }
 .shopping_cart_wrapper{
     position: relative;
@@ -130,6 +137,10 @@ input:focus {
 }
 .form__wrapper{
     background: linear-gradient(180deg, #262626 30.46%, #3A3A3A 100%);
+    padding: 10px;
+}
+.form__wrapper form{
+    
 }
 .form__wrapper h2{
     display: none;
@@ -138,6 +149,7 @@ input:focus {
     display: flex;
     flex-direction: column;
 }
+
 .form_row{
     display: flex;
     flex-direction: column;
@@ -149,19 +161,26 @@ form input{
     width: 100%;
     height: 40px;
     position: relative;
+    margin: 10px 0;
   }
 .input_data input{
   display: block;
   width: 100%;
+  margin-top: 10px;
   height: 25px;
   border: none;
 }
 .input_data input:focus ~ label,
 .input_data input:valid ~ label{
-  transform: translateY(-20px);
+  transform: translateY(-25px);
   font-size: 14px;
-  color: #3498db;
+  color: var(--rare-color);
 }
+
+.slide__description p{
+    text-align: right;
+}
+
 .underline{
     width: 100%;
     height: 1px;
@@ -192,8 +211,17 @@ form input{
 }
 .footer{
     background-color: var(--black-color);
+    padding-top: 200px;
+    padding-bottom: 30px;
     width: 100%;
 }
 .btn_info a{
     text-decoration: underline;
+}
+.pair__brands{
+    display: flex;
+    justify-content: space-between;
+}
+.pair__brands img{
+    margin: 10px 0;
 }
