@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
-    
+    margin: 0;
+    padding: 0;
   }
 html{
     font-size: 62.5%;
@@ -14,6 +15,7 @@ html{
 }
 body{
     background-color: var(--main-color);
+    padding: 10px;
 }
 img {
     max-width: 100%;
@@ -74,12 +76,9 @@ input:focus {
 
     
 }
-.good a{
-    text-decoration: none;
-}
 .img__wrapper{
-    width:47vw;
-    height:47vw;
+    width:45vw;
+    height:45vw;
     background: radial-gradient(38.57% 63.64% at 46.28% 56.14%, #45403B 0%, #262626 100%);
     display: flex;
     justify-content: center;
@@ -108,6 +107,9 @@ input:focus {
     right: 0;  
 }
 .shopping_cart_circle{
+    text-align: center;
+}
+.shopping_cart_count{
     text-align: center;
 }
 .ref_view{
@@ -190,4 +192,8 @@ form input{
 }
 .footer{
     background-color: var(--black-color);
+    width: 100%;
+}
+.btn_info a{
+    text-decoration: underline;
 }

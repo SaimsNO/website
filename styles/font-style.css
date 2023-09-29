@@ -24,7 +24,6 @@
     font-size: 5rem;
     font-style: normal;
     font-weight: 700;
-    letter-spacing: -4.251px;
     text-transform: uppercase;
     text-shadow: 0.5px 0.5px 0 var(--rare-color),
                  -0.5px -0.5px 0 var(--rare-color),
@@ -54,6 +53,9 @@
 .font__color__text{
     color: var(--text-color);
 }
+.font__color__black{
+    color: var(--black-color);
+}
 .font__uppercase{
     text-transform: uppercase;
 }
@@ -74,6 +76,9 @@
 }
 .font__size4rem{
     font-size: 4rem;
+}
+.font__size4p5rem{
+    font-size: 4.5rem;
 }
 .font__view{
     color: var(--font-color);
