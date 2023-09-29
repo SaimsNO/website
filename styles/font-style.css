@@ -1,24 +1,3 @@
-html {
-    font-size: 62.5%;
-    }
-.slide__description h3{
-    margin: 0;
-    color: var(--font-color);
-    font-family: Helvetica;
-    font-size: 4rem;
-    font-style: normal;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.slide__description p{
-    color: var(--font-color);
-    text-align: right;
-    font-family: Helvetica;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    text-transform: uppercase;
-}
 .product_font{
     color: var(--font-color);
     font-family: Helvetica;
@@ -53,19 +32,53 @@ html {
                  0.5px -0.5px 0 var(--rare-color);
     color: var(--main-color)
 }
-.describtion__exclusive__good{
-    color: var(--text-color);
-    text-align: justify;
+.font__Helvetica{
     font-family: Helvetica;
-    font-size: 1.6rem;
-    font-style: normal;
+}
+.font__BebasNeue{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.font__weight__400{
     font-weight: 400;
-    line-height: 129.523%; /* 20.724px */
+}
+.font__weight__700{
+    font-weight: 700;
+}
+.font__color__font{
+    color: var(--font-color);
+}
+.font__color__rare{
+    color: var(--rare-color);
+}
+.font__color__text{
+    color: var(--text-color);
+}
+.font__uppercase{
+    text-transform: uppercase;
+}
+.font__size5rem{
+    font-size: 5rem;
+}
+.font__size1p6rem{
+    font-size: 1.6rem;
+}
+.font__size1p5rem{
+    font-size: 1.5rem;
+}
+.font__size1p4rem{
+    font-size: 1.4rem;
+}
+.font__size2rem{
+    font-size: 2rem;
+}
+.font__size4rem{
+    font-size: 4rem;
 }
 .font__view{
     color: var(--font-color);
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 400;
     text-transform: uppercase;
 }
