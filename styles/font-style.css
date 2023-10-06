@@ -37,9 +37,15 @@
 .font__BebasNeue{
     font-family: 'Bebas Neue', sans-serif;
 }
+.font__Inter{
+    font-family: 'Inter', sans-serif;
+}
 
 .font__weight__400{
     font-weight: 400;
+}
+.font__weight__600{
+    font-weight: 600;
 }
 .font__weight__700{
     font-weight: 700;

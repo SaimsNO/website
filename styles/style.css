@@ -16,6 +16,10 @@ html{
 body{
     background-color: var(--main-color);
     padding: 10px;
+    font-family: Helvetica;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--text-color);
 }
 h1, h2, h3, h4, h5, h6, p{
     margin: 10px 0;
@@ -25,6 +29,7 @@ img {
   }
 a{
     text-decoration: none;
+    color: inherit;
 }
 button{
     background-color: transparent;
@@ -51,7 +56,13 @@ input:focus {
     margin: 20px 0;
 }
 .slide_content{
+    height: 400px;
     position: relative;
+    overflow: hidden;
+}
+.slide_content img{
+    height: 100%;
+    object-fit: cover;
 }
 .slide__description{
     position: absolute;
@@ -105,16 +116,18 @@ input:focus {
     width: 100%;
     margin-bottom: 20px;
 }
-.shopping_cart_wrapper{
+.shopping_cart_icon{
     position: relative;
 }
 .shopping_cart_circle{
+    text-align: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--rare-color);
     position: absolute;
     top: 0;
-    right: 0;  
-}
-.shopping_cart_circle{
-    text-align: center;
+    right: 0;
 }
 .shopping_cart_count{
     text-align: center;
@@ -134,6 +147,11 @@ input:focus {
 .wrapper__learn__more{
     display: flex;
     justify-content: flex-end;
+}
+.text__learn__more{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
 }
 .form__first {
     position: relative;
@@ -206,6 +224,9 @@ form input{
     background-color: var(--rare-color);
     height: 57px;
 }
+.button__wrapper a{
+    text-decoration: underline;
+}
 
 .wrapper__learn__more > p{
     margin: 0 20px;
@@ -219,10 +240,25 @@ form input{
 .btn_info a{
     text-decoration: underline;
 }
-.pair__brands{
+.wrapper__brands{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.wrapper__brands img{
+    margin: 10px 0;
+}
+.social__icons{
+    width: 80%;
+    margin: 30px 0;
     display: flex;
     justify-content: space-between;
 }
-.pair__brands img{
-    margin: 10px 0;
+.social__icons a{
+    display: flex;
+    align-items: center;
+}
+.contact__info{
+    display: flex;
+    flex-direction: column;
 }
