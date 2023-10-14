@@ -13,9 +13,11 @@ html{
     --text-color: #CCC;
     --black-color: #000;
 }
+.container {
+    padding: 10px;
+}
 body{
     background-color: var(--main-color);
-    padding: 10px;
     font-family: Helvetica;
     font-size: 1.6rem;
     font-weight: 400;
