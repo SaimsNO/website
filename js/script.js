@@ -17,3 +17,30 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+document.addEventListener('DOMContentLoaded', function(){
+ 
+    // Получаем все видео
+    var videos = document.querySelectorAll('video');
+
+    // Добавляем обработчик события click к кнопкам
+    videos.forEach((video) => {
+        var button = video.nextElementSibling;
+        currentButton = button;
+        
+        if (currentButton){
+            currentButton.addEventListener('click', (e) => {
+                // Если видео не воспроизводится запустим его
+                if (video.paused) {
+                    video.play();
+                    e.currentTarget.classList.add("play");
+                } else {
+                    video.pause();
+                    e.currentTarget.classList.remove("play");
+                    }
+            });
+        }
+
+    });
+
+});
