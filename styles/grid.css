@@ -1,0 +1,75 @@
+.grid__main{
+    background-color: white;
+}
+.grid_charts{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    "sidebar charts";
+}
+.charts{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 10px;
+    grid-area: charts;
+}
+.chart{
+    width: 100%;
+}
+.large_block{
+    display: grid;
+    grid-column: 1/-1;
+}
+.medium_block{
+    display: grid;
+    grid-column: span 3;
+}
+.small_block{
+    grid-column: span 2;
+}
+.sidebar{
+    grid-area: sidebar;
+    display: grid;
+    align-items: center;
+}
+.sidebar a{
+    color: black;
+}
+.footer{
+    padding: 0;
+}
+
+.grid__main{
+    display: grid;
+}
+.gallery{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.gallery h2{
+    font-size: 40px;
+    color: black;
+}
+.gallery__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+.item{
+    display: grid;
+    grid-column: span 1;
+    display: block;
+    max-width: 100%;
+}
+.chart svg{
+    width: 100%;
+}
+.wrapper {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
