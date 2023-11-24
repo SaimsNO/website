@@ -58,6 +58,15 @@ button {
 input:focus {
     outline: none;
 }
+
+.wrapper {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -73,12 +82,31 @@ input:focus {
 .disable {
     display: none;
 }
-
-.header {
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header_panel {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.right_buttons button{
+    display: none;
+}
+.navigation{
+    display: none;
+    width: 80%;
+    margin-top: 20px;
+    color: var(--font-color);
+}
+.nav_list{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
 }
 
 .carousel_wrapper {
@@ -129,8 +157,7 @@ input:focus {
 }
 
 .img__wrapper {
-    width: 45vw;
-    height: 45vw;
+    width: 100%;
     margin-bottom: 10px;
     background: radial-gradient(38.57% 63.64% at 46.28% 56.14%, #45403B 0%, #262626 100%);
     display: flex;

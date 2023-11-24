@@ -1,0 +1,17 @@
+@media (min-width: 744px) {
+    .navigation{
+        display: block;
+    }
+    .right_buttons{
+        display: flex;
+        align-items: center;
+        width: 8%;
+        justify-content: space-between;
+    }
+    .right_buttons button{
+        display: block;
+    }
+    .slide_content{
+        height: auto;
+    }
+  }
