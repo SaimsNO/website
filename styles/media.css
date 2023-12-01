@@ -14,4 +14,102 @@
     .slide_content{
         height: auto;
     }
+    .contact__info{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer_links{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .form__first div:first-of-type {
+        flex-direction: row;
+        column-gap: 10px;
+        /* Ваш стиль для первого div с классом "row" внутри формы */
+      }
+    .button__wrapper{
+        flex-direction: row;
+        column-gap: 10px;
+        
+    }
+    .button__wrapper button{
+        flex: 1;
+    }
+    .about__us {
+        grid-template-columns: 1fr 1fr;
+        margin: 20px 0;
+        column-gap: 10px;
+    }
+    .about__us p {
+        grid-column: span 1;
+    }
+
+    .about__us div:nth-of-type(2) {
+        /* grid-row: 2; */
+        grid-column: 2;  
+    }
+    .form__first{
+        padding: 20px;
+    }
+    .contact__info{
+        flex-direction: row;
+    }
   }
+@media (min-width: 1440px){
+    .logo img:nth-child(1), .logo img:nth-child(3){
+        display: block;
+    }
+    .good{
+        grid-column: span 2;
+    }
+    .exclusive_product{
+        display: flex;
+    }
+    .about__us {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about__us h3 {
+        grid-column: 1;
+        grid-row: 1/-1;
+    }
+    .about__us p{
+        margin-top: 0;
+    }
+    .brands{
+        display: flex;
+        flex-direction: row;
+    }
+    .about__us div:nth-of-type(2) {
+        /* grid-row: 2; */
+        grid-column: 3;  
+    }
+    .form__first{
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 15px;
+    }
+    .form__first div{
+        width: 100%;
+    }
+    .contact__info{
+        flex-direction: column;
+    }
+    .footer_wrapper{
+        display: flex;
+        column-gap: 15px;
+        position: relative;
+    }
+    .footer_wrapper p{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .footer_links{
+        justify-content: center;
+        column-gap: 30px;
+    }
+    .slide_content {
+        height: 561px;
+    }
+}
