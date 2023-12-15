@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/media.css">
+    <link rel="stylesheet" type="text/css" href="styles/font-style.css">
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:wght@500;900&display=swap"
+        rel="stylesheet">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div class="wrappe">
+        <header class="header container">
+            <div class="header_panel">
+                <button class="button_search">
+                    <img src="img/search.svg" alt="">
+                </button>
+                <a href="index.html" class="logo">
+                    <img src="img/line.svg" alt="">
+                    <img src="img/logo.svg" alt="">
+                    <img src="img/line.svg" alt="">
+                </a>
+                <div class="right_buttons">
+                    <a class ="shopping_cart_icon" href="">
+                        <img src="img/cart.svg" alt="">
+                        <div class="shopping_cart_circle font__color__black font__Inter font__weight__600">
+                            4
+                        </div>
+                    </a>
+                    <button class="font__color__font font__Inter">ENG</button>
+                </div>
+            </div>
+            <nav class="navigation">
+                <ul class="nav_list font__Inter font__color__font">
+                    <li><a href="">catalogue</a></li>
+                    <li><a href="">our company</a></li>
+                    <li><a href="">downloads</a></li>
+                    <li><a href="">contacts</a></li>
+                    <li><a href="">partnership</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="//httpbin.org/post" method="POST">
+                <div class="form-group">
+                    <h2>Личная информация</h2>
+                    <label for="name">Имя <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+        
+                    <label for="dob">Дата рождения <span class="required">*</span></label>
+                    <input type="date" id="dob" name="dob" required>
+        
+                    <label for="gender">Пол</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Мужской</option>
+                        <option value="female">Женский</option>
+                    </select>
+                    <label for="password">Пароль <span class="required">*</span></label>
+                    <input type="password" id="password" name="password" placeholder="********" required>
+                </div>
+        
+                <div class="form-group">
+                    <h2>Контактные данные</h2>
+        
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+        
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 123-456-7890">
+                    
+                    <label>Удобный интервал для связи</label>
+                    <input type="radio" id="morning" name="contact_interval" value="morning">
+                    <label for="morning">Утро</label>
+                    <input type="radio" id="day" name="contact_interval" value="day">
+                    <label for="day">День</label>
+                    <input type="radio" id="evening" name="contact_interval" value="evening">
+                    <label for="evening">Вечер</label>
+                    <input type="radio" id="night" name="contact_interval" value="night">
+                    <label for="night">Ночь</label>
+                </div>
+        
+                <button type="submit" id="sub1">Отправить <span>&#9658;</span></button>
+                <button type="reset">Сбросить <span>&#8634;</span></button>
+            </form>
+        </main>
+        
+        <footer class="footer container">
+            <div class="footer_wrapper">
+                <div>
+                    <h2 class="font__weight__400 font__color__text font__size1p6rem">Contacts</h2>
+                    <div class="contact__info font__BebasNeue font__size4p5rem font__color__font font__uppercase">
+                        <a>SALE@ANZHEE.AE</a>
+                        <a>+971 050 743 2895</a>
+                    </div>
+                    <div class="social__icons">
+                        <a href="#"><img src="img/Facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="img/Instagram.svg" alt="Instagram"></a>
+                        <a href="#"><img src="img/youtube.svg" alt="YouTube"></a>
+                        <a href="#"><img src="img/tg.svg" alt="TG"></a>
+                        <a href="#"><img src="img/VK.svg" alt="VK"></a>
+                    </div>
+                </div>
+                
+            <div class="footer_links">
+                <div class="catalogue_links">
+                    <h2 class="font__weight__400 font__color__text font__size1p6rem">Catalogue</h2>
+                    <div class="links_row">
+                        <div class="container_links">
+                            <a href="grid.html" class="font__link font__size2rem">Grid</a>
+                            <a href="form.html" class="font__link font__size2rem">Form</a>
+                            <a href="#" class="font__link font__size2rem">Lorem, ipsum.</a>
+                            <a href="#" class="font__link font__size2rem">Lorem, ipsum.</a>
+                            <a href="#" class="font__link font__size2rem">Lorem, ipsum.</a>
+                            <a href="#" class="font__link font__size2rem">Lorem, ipsum.</a>
+                            <a href="#" class="font__link font__size2rem">Lorem, ipsum.</a>
+                        </div>
+                        <div class="container_links">
+                            <a href="#" class="font__link font__size2rem">Lorem, ipsum.</a>
+                            <a href="#" class="font__link font__size2rem">Lorem, ipsum.</a>
+                            <a href="#" class="font__link font__size2rem">Lorem, ipsum.</a>
+                            <a href="#" class="font__link font__size2rem">Lorem, ipsum.</a>
+                            <a href="#" class="font__link font__size2rem">Lorem, ipsum.</a>
+                            <a href="#" class="font__link font__size2rem">Lorem, ipsum.</a>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="info_links">
+                    <h2 class="font__weight__400 font__color__text font__size1p6rem">Info</h2>
+                    <div class="container_links">
+                        <a href="" class="font__link font__size2rem">Lorem, ipsum.</a>
+                        <a href="" class="font__link font__size2rem">Lorem, ipsum.</a>
+                        <a href="" class="font__link font__size2rem">Lorem, ipsum.</a>
+                        <a href="" class="font__link font__size2rem">Lorem, ipsum.</a>
+                        <a href="" class="font__link font__size2rem">Lorem, ipsum.</a>
+                        <a href="" class="font__link font__size2rem">Lorem, ipsum.</a>
+                    </div>
+                </div>
+            </div>
+            <p class="font__weight__400 font__color__text font__Helvetica font__size1p4rem">&copy; 2023 Anzhee All rights reserved</p>
+            </div>
+            
+        </footer>
+    </div>
+</body>
+
+</html>
