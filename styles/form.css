@@ -45,8 +45,6 @@ button[type="reset"] {
 
 footer{
     background-color: black !important;
-    position: sticky;
-    bottom: 0;
 }
 input[type="radio"]:checked+label,
 input[type="checkbox"]:checked+label {
