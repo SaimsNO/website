@@ -154,6 +154,11 @@ input:focus {
     transition: all 0.2s linear;
 }
 
+.button__wrapper button:focus{
+    box-shadow: 10px 5px 5px black;
+    background-color: #9a8f00;
+    transition: all 0.2s linear;
+}
 .wrapper {
     max-width: 1170px;
     margin-left: auto;
@@ -271,6 +276,13 @@ transform: translateY(20%);
     color: var(--rare-color);
 }
 .good:hover img{
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out;
+}
+.good:focus h3{
+    color: var(--rare-color);
+}
+.good:focus img{
     transform: scale(1.5);
     transition: transform 0.3s ease-in-out;
 }
