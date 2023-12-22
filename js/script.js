@@ -44,3 +44,12 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Задержка в 3 секунды (3000 миллисекунд)
+    setTimeout(function () {
+        var card = document.querySelector('.card.loading');
+        card.classList.remove('loading');
+        card.classList.add('loaded');
+    }, 3000);
+});

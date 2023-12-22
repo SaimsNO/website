@@ -57,6 +57,98 @@ button {
 input:focus {
     outline: none;
 }
+::selection {
+    background: #474747; /* Замените на нужный цвет вашего макета */
+    color: #fff; /* Цвет текста в выделенной области */
+}
+
+.button_search:hover{
+    cursor: pointer;
+}
+.nav_list a:hover, .container_links a:hover, .nav_list a:focus, .container_links a:focus, .ref_view:hover, .ref_view:hover p{
+    color: var(--rare-color);
+    transition: color 0.2s linear;
+}
+
+.right_buttons button:hover, .right_buttons button:focus{
+    cursor: pointer;
+    color: var(--rare-color);
+    transition: color 0.2s linear;
+}
+
+.ref_view:hover p{
+    color: var(--rare-color);
+    transition: color 0.2s linear;
+}
+
+.nav_list a:active, .container_links a:active, .ref_view:active p{
+    color: var(--text-color);
+    transition: color 0.2s linear;
+}
+
+.right_buttons button:active{
+    cursor: pointer;
+    color: var(--text-color);
+    transition: color 0.2s linear;
+}
+
+.nav_list li:nth-child(even) {
+    color: green; /* Цвет текста для четных элементов */
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+@keyframes rotation {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+} 
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card.loading .loader {
+    visibility: visible;
+
+}
+.card{
+    width: 100%;
+}
+/* Стили для отображения содержимого карточки */
+.card.loaded .loader {
+    visibility: hidden;
+}
+.card-content{
+    width: 100%;
+}
+.card.loaded .card-content {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transition: opacity 0.5s;
+}
+
+/* Пример содержимого карточки (замените на свой контент) */
+.card-content {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
 
 .wrapper {
     max-width: 1170px;
@@ -150,15 +242,34 @@ input:focus {
 .catalogue h2 {
     display: none;
 }
-
+.skip-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 10px 15px;
+    color: #18191c;
+    background: #10F3AF;
+    transform: translateY(-100%);
+}
+.skip-link:focus {
+transform: translateY(20%);
+}
 .good {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     grid-column: span 3;
 }
-
+.good:hover h3{
+    color: var(--rare-color);
+}
+.good:hover img{
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out;
+}
 .img__wrapper {
     width: 100%;
     margin-bottom: 10px;
@@ -460,4 +571,9 @@ button.v_play {
 }
 .footer_links a{
     margin: 5px 0;
+}
+
+.footer_logo:hover {
+    transform: rotate(30deg) scale(1.5) skewX(20deg) skewY(20deg);
+    transition: transform 0.3s ease-in-out;
 }
