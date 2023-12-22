@@ -148,7 +148,11 @@ input:focus {
     opacity: 0;
     transition: visibility 0s, opacity 0.5s;
 }
-
+.button__wrapper button:hover{
+    box-shadow: 10px 5px 5px black;
+    background-color: #9a8f00;
+    transition: all 0.2s linear;
+}
 
 .wrapper {
     max-width: 1170px;
